@@ -17,6 +17,13 @@ OptiResume is a comprehensive web application designed to empower users in creat
 - **Data Storage and Retrieval:** Utilizing PostgreSQL allows for efficient and reliable storage and retrieval of user data.
 - **REST API Endpoints:** The implementation of RESTful API endpoints streamlines communication between the frontend and backend, providing a foundation for extensibility and integration with other systems.
 
+## Screenshots
+-![Screenshot 1](https://github.com/Sanskarsahu17/OptiResume/tree/master/ScreenShots/Screenshot(122).png)
+-![Screenshot 2](https://github.com/Sanskarsahu17/OptiResume/tree/master/ScreenShots/Screenshot(123).png)
+-![Screenshot 3](https://github.com/Sanskarsahu17/OptiResume/tree/master/ScreenShots/Screenshot(125).png)
+-![Screenshot 4](https://github.com/Sanskarsahu17/OptiResume/tree/master/ScreenShots/Screenshot(126).png)
+-![Screenshot 5](https://github.com/Sanskarsahu17/OptiResume/tree/master/ScreenShots/Screenshot(133).png)
+
 ## Getting Started
 
 1. Clone the repository: `git clone https://github.com/your-username/optiresume.git`
