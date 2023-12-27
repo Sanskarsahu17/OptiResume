@@ -18,11 +18,11 @@ OptiResume is a comprehensive web application designed to empower users in creat
 - **REST API Endpoints:** The implementation of RESTful API endpoints streamlines communication between the frontend and backend, providing a foundation for extensibility and integration with other systems.
 
 ## Screenshots
-- ![Screenshot 1](https://github.com/Sanskarsahu17/OptiResume/tree/master/ScreenShots/Screenshot(122).png)
-- ![Screenshot 2](https://github.com/Sanskarsahu17/OptiResume/tree/master/ScreenShots/Screenshot(123).png)
-- ![Screenshot 3](https://github.com/Sanskarsahu17/OptiResume/tree/master/ScreenShots/Screenshot(125).png)
-- ![Screenshot 4](https://github.com/Sanskarsahu17/OptiResume/tree/master/ScreenShots/Screenshot(126).png)
-- ![Screenshot 5](https://github.com/Sanskarsahu17/OptiResume/tree/master/ScreenShots/Screenshot(133).png)
+- ![Screenshot 1](https://github.com/Sanskarsahu17/OptiResume/blob/master/ScreenShots/Screenshot%20(122).png)
+- ![Screenshot 2](https://github.com/Sanskarsahu17/OptiResume/blob/master/ScreenShots/Screenshot%20(123).png)
+- ![Screenshot 3](https://github.com/Sanskarsahu17/OptiResume/blob/master/ScreenShots/Screenshot%20(125).png)
+- ![Screenshot 4](https://github.com/Sanskarsahu17/OptiResume/blob/master/ScreenShots/Screenshot%20(126).png)
+- ![Screenshot 5](https://github.com/Sanskarsahu17/OptiResume/blob/master/ScreenShots/Screenshot%20(133).png)
 
 ## Getting Started
 
