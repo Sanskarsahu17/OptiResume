@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/resume.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container" id="cv-form">
+    <h1 class="text-center my-2">Resume Generator</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- first column -->
+            <h3>Personal Information</h3>
+            <div class="form-group mt-3">
+                <label for="nameField">Your Name</label>
+                <input type="text" id="nameField" placeholder="Enter Here" class="form-control"/>
+            </div>
+            <div class="form-group mt-2">
+                <label for="contactField">Your Contact No.</label>
+                <input type="text" id="contactField" placeholder="Enter Here" class="form-control"/>
+            </div>
+            <div class="form-group mt-2">
+                <label for="adressField">Your Address</label>
+                <textarea type="text" id="addressField" placeholder="Enter Here" class="form-control" rows="5"></textarea>
+            </div>
+            
+            <p class="text-secondary my-2">Important Links</p>
+            <div class="form-group mt-2">
+                <label for="githubField">GitHub</label>
+                <input type="text" id="githubField" placeholder="Enter Here" class="form-control"/>
+            </div>
+            <div class="form-group mt-2">
+                <label for="linkedField">LinkedIn</label>
+                <input type="text" id="linkedField" placeholder="Enter Here" class="form-control"/>
+            </div>
+            <div class="form-group mt-2">
+                <label for="facebookField">Facebook</label>
+                <input type="text" id="facebookField" placeholder="Enter Here" class="form-control"/>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- second column -->
+            <h3>Professional Information</h3>
+            <div class="form-group mt-2">
+                <label for="">Objective</label>
+                <textarea id="objectiveField" placeholder="Enter Here" class="form-control"></textarea>
+            </div>
+            <div class="form-group mt-2" id="we">
+                <label for="">Work Experience</label>
+                <textarea placeholder="Enter Here" class="form-control weField" rows="3"></textarea>
+                <div class="container text-center my-3" id="weAddButton">
+                    <button onclick="addNewWEField()" class="btn btn-primary btn-sm">Add</button>
+                </div>
+            </div>
+            <div class="form-group mt-2" id="aq">
+                <label for="">Academic Qualification</label>
+                <textarea placeholder="Enter Here" class="form-control aqField" rows="3"></textarea>
+                <div class="container text-center my-3" id="aqAddButton">
+                    <button onclick="addNewAQField()" class="btn btn-primary btn-sm" id="aqAddButton">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center my-2">
+    <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate Resume</button>
+</div>
+</div>
+
+<div class="container text-center" id="cv-template">
+    <div class="row">
+        <div class="col-md-3" id="sideContainer">
+            <!-- This is first column -->
+            <img src="/images/user.png" class="profileImg my-3" alt="">
+            <div class="container">
+                <h4 id="nameT">Sanskar Sahu</h4>
+                <p id="contactT">+91-8982500926</p>
+                <p id="addressT">53/67 Sector C Noida, INDIA</p>
+                <hr noshade="" style="height: 2px; background-color: black;">
+                <br>
+                <p><a id="gitT" href="">www.GitHub/users/profile</a></p>
+                <p><a id="linkedT" href="">www.LinkedIn/users/profile</a></p>
+                <p><a id="facebookT" href="">www.Facebook/users/profile</a></p>
+
+            </div>
+        </div>
+        <div class="col-md-9 py-5">
+            <!-- This is second column -->
+            <h1 id="nameT2" class="text-center" style="font-weight: 980;">Sanskar Sahu</h1>
+
+            <div class="card mt-4">
+                <div class="card-header" style="background-color: #E89146;">
+                    <h3>Objectives</h3>
+                </div>
+                <div class="card-body">
+                    <p id="objectiveT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sit earum quae inventore tempora ea maxime itaque, eum architecto. Labore neque voluptas deleniti doloremque dignissimos earum, tempore commodi. Error, porro? Ullam ratione amet fugiat similique, autem porro doloremque molestiae dolorum!</p>
+
+                </div>
+            </div>
+            <div class="card mt-4">
+                <div class="card-header" style="background-color: #E89146;">
+                    <h3>Work Experience</h3>
+                </div>
+                <div class="card-body">
+                    <ul id="weT">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, asperiores.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, consequuntur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, consequuntur.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Academic Qualification -->
+            <div class="card mt-4">
+                <div class="card-header" style="background-color: #E89146;">
+                    <h3>Academic Qualification</h3>
+                </div>
+                <div class="card-body">
+                    <ul id="aqT">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, asperiores.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, consequuntur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, consequuntur.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container mt-3 text-center">
+                <button onclick="printCV()" class="btn" style="background-color: royalblue;">Print Resume</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/script/resume.js"></script>
+</body>
+</html>

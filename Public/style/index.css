@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+#page1{
+height: 100vh;
+}
+#nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#nav-content{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 10vh;
+    gap: 9rem;
+    align-items: center;
+}
+#link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    gap: 1rem;
+    align-items: center;
+    
+}
+#link a{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    border: 2px solid #FFED00;
+    padding: 2px 4px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+.btn:hover{
+    background-color: #FFED00;
+    transition: 0.3s ease-in;
+}
+.btn h3{
+    color: #FFED00;
+}
+.btn h3:hover{
+    color: white;
+}
+
+.btn1{
+margin-left: 1rem;
+}
+ hr{
+    margin: 1rem 0;
+    width: 70vw;
+   height: 3px;
+   background-color: grey;
+}
+.opti{
+    color: #16FF00;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    height: 65vh;
+    margin-top: 3rem;
+}
+#text-content{
+    width: 600px;
+    color: #333333;
+}
+#resimage {
+    overflow-y: hidden;
+}
+#resimage img{
+width: 480px;
+height: 500px;
+object-fit: contain;
+}
+.header1{
+    color: #333333;
+    font-weight: 800;
+    
+}
+.header-text{
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.img1::before{
+    content: '';
+    background: url(check-mark.png);
+    position:absolute;
+    top:0px;
+    left:50px;
+    height: 50px;
+    width: 50px;
+}
+.atr{
+   display: flex;
+   align-items: center;
+   margin: 1rem 0;
+}
+.atr img{
+    height: 1.5rem;
+    width: 1.5rem;
+    object-fit: contain;
+    margin: 0 1rem;
+
+}
+.startresume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 17rem;
+    margin: 2rem 0;
+    background-color: #FFED00;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+}
+.startresume:hover{
+    background-color: #f6ef8e;
+    
+}
+.container-2{
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #f9f9f9;
+}
+.adverse{
+    color: #8F8F8F;
+}

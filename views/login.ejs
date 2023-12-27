@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/register.css">
+</head>
+<body>
+    <div class="registration-box">
+        <h2>Login</h2>
+        <ul>
+        <% if(messages.success_msg){ %>
+            <li><%= messages.success_msg %></li>
+            <% } %>
+        </ul>
+        <ul>
+            <% if(messages.error){ %>
+               <li> <%= messages.error %></li>
+               <% } %>
+        </ul>
+        <form action="/users/login" method="post">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <input type="submit" value="Login">
+            <a href="/users/register">Register</a>
+        </form>
+    </div>
+</body>
+</html>

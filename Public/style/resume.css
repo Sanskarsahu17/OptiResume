@@ -1,0 +1,27 @@
+#cv-form{
+    /* display: none; */
+}
+
+#cv-template{
+    display: none;
+}
+.profileImg{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border: 4px groove black;
+    border-radius: 50%;
+    
+}
+#sideContainer{
+    height: 100vh;
+    background-color: #E89146;
+}
+#sideContainer p a{
+    text-decoration: none;
+    color: black;
+
+}
+.background{
+    background-color: #E89146;
+}
